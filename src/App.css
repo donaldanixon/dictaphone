@@ -1,0 +1,10 @@
+.mainContent {
+  position: absolute;
+  top: max(200px, 10vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 50px;
+}

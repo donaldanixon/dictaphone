@@ -1,0 +1,115 @@
+.NavBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: max(150px, 10vh);
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+
+.Title {
+    color: #e9e9e9;
+    font-size: clamp(0.5rem, 4vw, 2.5rem);
+    font-weight: bold;
+    padding: 0 5vw;
+}
+
+.Subtitle {
+    color: #e9e9e9;
+    font-size: clamp(0.25rem, 2vw, 1.25rem);
+    font-style: italic;
+    padding-top: 10px;
+    font-weight: 300;
+}
+
+.MenuText {
+    color: #e9e9e9;
+    font-size: clamp(0.33rem, 2.5vw, 1.5rem);
+    font-weight: regular;
+    padding: 1rem;
+    height: max-content;
+    width: max-content;
+    margin-right: 5vw;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.MenuText:hover {
+    color: #e9e9e9;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.modalClose:hover {
+    cursor: pointer;
+    padding: 10px;
+    transform: translate(11px, -11px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.modalCard {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: min(800px, 80%);
+    height: min(300px, 25%);
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 78, 169, 173, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 78, 169, 173, 0.5 );
+    transform: translate( -50%, -50% );
+    z-index: 2;
+}
+
+.modalClose {
+    position: absolute;
+    top: 24px;
+    right: 36px;
+    color: #e9e9e9;
+    font-size: clamp(0.33rem, 2.5vw, 1.5rem);
+    font-weight: regular;
+    height: max-content;
+    width: max-content;
+    text-align: center;
+}
+
+.modalHeader {
+    color: #e9e9e9;
+    font-size: clamp(0.5rem, 3.5vw, 2rem);
+    font-weight: 500;
+    top: 24px;
+    left: 36px;
+    position: absolute;
+}
+
+.modalText {
+    position: relative;
+    top: 72px;
+    color: #e9e9e9;
+    font-size: clamp(0.25rem, 2vw, 1.25rem);
+    font-weight: regular;
+    height: 100%;
+    width: calc(100% - 72px);
+    padding: 1rem 36px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+a {
+    color: #e9e9e9;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}

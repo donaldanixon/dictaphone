@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
+
+:root {
+  font-family: Doto;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;  
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  place-items: center;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(12, 69, 83, 0.8) 0%,
+      rgba(12, 69, 83, 0.3) 50%
+    ),
+    url("./assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: visible;
+  background-attachment: fixed;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}

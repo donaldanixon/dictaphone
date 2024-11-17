@@ -1,0 +1,127 @@
+.dictaphoneContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  width: 80%;
+  max-width: 500px;
+  height: max-content;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  color: #e0e0e0;
+}
+
+.dictaphoneBackground {
+  background-color: #444;
+  width: calc(100% - 20px);
+  height: calc(100% - 40px);
+  padding: 20px 10px;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.dictaphoneScreen {
+  background-color: #222;
+  width: 80%;
+  height: 60px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid #666;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.dictaphoneScreenContent {
+  color: #0f0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.dictaphoneScreenContentFlashing {
+  color: #0f0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+
+.dictaphoneButton {
+  background-color: #666;
+  flex-shrink: 0;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s ease;
+}
+
+.dictaphoneButton:hover {
+  background-color: #888;
+}
+
+.playIcon, .RecordIcon, .stopIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #222;
+}
+
+.playIcon {
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.stopIcon {
+  background-color: #111;
+  border-radius: 2px;
+}
+
+.RecordIcon {
+  background-color: red;
+  border-radius: 50%;
+}
+
+.dictaphoneButtonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 25px;
+}
+
+.dictaphoneTranscribeButton {
+  background-color: #444;
+  color: #ccc;
+  padding: 20px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #666;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: 14px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.dictaphoneTranscribeButton:hover {
+  background-color: #555;
+}
+
+audio, audio::-webkit-media-controls-panel {
+  background-color: #666;
+  border-radius: 30px;
+}
