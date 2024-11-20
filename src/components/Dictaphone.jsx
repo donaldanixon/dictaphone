@@ -246,23 +246,29 @@ function Dictaphone(props) {
                   <div className="RecordIcon" onClick={handleToggleRecording} />
                 )}
               </div>
-            {recordedBlob && (
+            {recordedBlob ? (
               <>
                 <audio
                   controls
                   src={URL.createObjectURL(recordedBlob)}
                   ref={audioRef}
                 />
-                {props.transcriber.isBusy===false ? (
-                <div className="dictaphoneTranscribeButton" onClick={startTranscription} >
-                  Transcribe
-                </div>
-                ) : (
-                  <div className="dictaphoneTranscribeButton" >
-                  Please wait...
-                </div>
-                )}
               </>
+            ) :(
+              <>
+                <audio
+                  controls
+                />
+              </>
+            )}
+            {props.transcriber.isBusy===false ? (
+            <div className="dictaphoneTranscribeButton" onClick={startTranscription} >
+              Transcribe
+            </div>
+            ) : (
+              <div className="dictaphoneTranscribeButton" >
+              Please wait...
+            </div>
             )}
             </div>
         </div>

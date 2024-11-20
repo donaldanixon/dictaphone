@@ -17,5 +17,3 @@ Credit must go to [Xenova](https://github.com/xenova/whisper-web/tree/main/src).
 ### To-do
 
 * Add a SQLite db to allow storage and recollection of texts (and audio as well if possible)
-* Fix the record button moving across when recording from microphone
-* Fix the top margin as gap is too large on mobile

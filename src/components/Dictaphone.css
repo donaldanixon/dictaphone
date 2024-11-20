@@ -122,6 +122,6 @@
 }
 
 audio, audio::-webkit-media-controls-panel {
-  background-color: #666;
+  background-color: RGBA(64,64,64,0.82);
   border-radius: 30px;
 }
